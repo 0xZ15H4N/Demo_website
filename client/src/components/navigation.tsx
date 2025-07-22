@@ -39,7 +39,7 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/">
-             <h1 className={`text-3xl font-great-vibes font-bold cursor-pointer transition-colors duration-300 ${
+             <h1 className={`text-5xl font-great-vibes font-bold cursor-pointer transition-colors duration-300 ${
                 isHomePage 
                   ? (isScrolled ? 'text-charcoal hover:text-burgundy-500' : 'text-white hover:text-gray-200')
                   : 'text-charcoal hover:text-burgundy-500'
@@ -55,7 +55,7 @@ export default function Navigation() {
               <Link
                 key={item.path}
                 href={item.path}
-                className={`font-montserrat font-medium transition-colors duration-300 ${
+                className={`font-montserrat font-bold transition-colors duration-300 ${
                   location === item.path
                     ? 'text-blue-500'
                     : isHomePage && !isScrolled
