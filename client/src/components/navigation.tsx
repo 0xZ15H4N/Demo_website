@@ -50,8 +50,8 @@ export default function Navigation() {
                 href={item.path}
                 className={`font-montserrat font-medium transition-colors ${
                   location === item.path
-                    ? 'text-burgundy-500'
-                    : 'text-charcoal hover:text-burgundy-500'
+                    ? 'text-blue-500'
+                    : 'text-charcoal hover:text-blue-500'
                 }`}
               >
                 {item.label}
@@ -75,29 +75,32 @@ export default function Navigation() {
       </div>
       
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-ivory border-t border-gray-200">
-          <div className="px-4 py-4 space-y-3">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                href={item.path}
-                className={`block font-montserrat transition-colors ${
-                  location === item.path
-                    ? 'text-burgundy-500'
-                    : 'text-charcoal hover:text-burgundy-500'
-                }`}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
-            <button className="w-full bg-burgundy-500 text-ivory px-6 py-2 rounded-full hover:bg-burgundy-600 transition-colors font-montserrat">
-              Reserve Table
-            </button>
-          </div>
+      <div className={`md:hidden bg-ivory border-t border-gray-200 transition-all duration-300 ease-in-out overflow-hidden ${
+        isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+      }`}>
+        <div className="px-4 py-4 space-y-3 transform transition-transform duration-300 ease-in-out">
+          {navItems.map((item, index) => (
+            <Link
+              key={item.path}
+              href={item.path}
+              className={`block font-montserrat transition-all duration-300 ease-in-out transform hover:translate-x-2 ${
+                location === item.path
+                  ? 'text-blue-500'
+                  : 'text-charcoal hover:text-blue-500'
+              } ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-[-20px] opacity-0'}`}
+              style={{ transitionDelay: `${index * 50}ms` }}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <button className={`w-full bg-burgundy-500 text-ivory px-6 py-2 rounded-full hover:bg-burgundy-600 transition-all duration-300 ease-in-out font-montserrat transform hover:scale-105 ${
+            isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-[-20px] opacity-0'
+          }`} style={{ transitionDelay: '200ms' }}>
+            Reserve Table
+          </button>
         </div>
-      )}
+      </div>
     </nav>
   );
 }

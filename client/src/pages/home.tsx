@@ -31,7 +31,7 @@ export default function Home() {
               Culinary 
               <span className="text-gold-500 font-great-vibes block">Artistry</span>
             </h1>
-            <p className="text-xl md:text-2xl text-ivory/90 mb-8 font-lora">
+            <p className="text-xl md:text-2xl text-blue-200 mb-8 font-lora">
               Where molecular gastronomy meets timeless elegance
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

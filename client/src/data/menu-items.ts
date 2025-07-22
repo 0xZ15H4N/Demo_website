@@ -15,7 +15,7 @@ export const menuItems: MenuItem[] = [
     description: "Hand-made pasta filled with Maine lobster, black truffle, and mascarpone",
     price: 48,
     category: "appetizers",
-    image: "https://images.unsplash.com/photo-1563379091339-03246963d7d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+    image: "https://images.unsplash.com/photo-1551782450-17144efb9c50?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const menuItems: MenuItem[] = [
     description: "Deconstructed tacos with liquid nitrogen spheres and micro-greens",
     price: 35,
     category: "appetizers",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+    image: "https://images.unsplash.com/photo-1618040996337-56904b7850b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
   },
   {
     id: 3,
