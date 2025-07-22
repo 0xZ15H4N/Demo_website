@@ -1,0 +1,83 @@
+🧠 AI Design Prompt for a Food Restaurant Frontend:
+
+"Design a fully responsive and animated frontend for a modern, luxurious food restaurant website. The website should consist of the following main pages with beautiful transitions between them:
+
+📄 Pages Required:
+Home Page – Featuring a full-screen hero section with a looping background video of gourmet food being prepared. Add parallax scrolling effects and animated text overlays.
+
+Menu Page – List up to 20 mind-boggling food items (use high-quality photos and mouthwatering item names). Each item should have:
+
+Name
+
+Short description
+
+Price
+
+Hover animation (e.g., subtle zoom or glow)
+
+Optional video thumbnail on click
+
+About Us Page – Include an elegant timeline of the restaurant’s story, team chefs, and a rustic-modern ambiance photo gallery.
+
+Contact Page – Animated map integration, stylish contact form, and working links to social media.
+
+🍽️ Sample Menu Items (feel free to generate visuals/videos for these):
+Truffle-Infused Lobster Ravioli
+
+Molecular Gastronomy Nitro Tacos
+
+24K Gold Foie Gras Sliders
+
+Rainbow Uni Caviar Tower
+
+Charcoal Ice Cream Croissant
+
+Saffron Pistachio Kulfi Cheesecake
+
+Blue Lava Sushi Bombs
+
+Espresso-Glazed Duck Confit
+
+Deconstructed Pav Bhaji Tacos
+
+Matcha Smoke Ramen
+
+Black Garlic Wagyu Burgers
+
+Lychee Rose Panna Cotta
+
+Edible Helium Balloon Desserts
+
+Dragon’s Breath Popcorn
+
+Flame-Grilled Chimichurri Octopus
+
+Vegan Jackfruit Pulled ‘Pork’ Sliders
+
+Liquid Nitrogen Pesto Pasta
+
+Pan-Seared Miso Halibut
+
+Fusion Tandoori Pizza
+
+Honeycomb Brûlée Latte
+
+✨ Design Style:
+Fonts: Use 4–5 beautiful web fonts (e.g., Playfair Display, Poppins, Great Vibes, Montserrat, Lora)
+
+Color Palette: Warm, elegant tones like deep burgundy, gold, ivory, charcoal, and forest green
+
+Animations/Transitions: Page transitions should be smooth using GSAP or Framer Motion; include fade-ins, zooms, parallax, and subtle hover microinteractions.
+
+Media: Use immersive high-res food photography and short, cinematic food preparation videos (MP4/WebM) for visual engagement.
+
+🛠️ Technical:
+Use modern HTML5, TailwindCSS or SCSS, and React (or Next.js) for SPA behavior
+
+Add scroll-triggered animations and lazy loading for performance
+
+Ensure mobile responsiveness and fast loading via optimized media
+
+Make the site visually addictive, modern, and good enough to make users hungry instantly."
+
+Let me know if you want a codebase starter too. code it 
