@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <h3 className="text-4xl font-great-vibes text-gold-500 mb-4">Lumière</h3>
+            <h3 className="text-4xl font-great-vibes text-gold-500 mb-4">Effio</h3>
             <p className="text-gray-300 font-poppins mb-6 max-w-md">
               Where culinary artistry meets molecular innovation. Experience the extraordinary at every bite.
             </p>
@@ -41,17 +41,17 @@ export default function Footer() {
           <div>
             <h4 className="text-xl font-montserrat font-semibold mb-4">Contact</h4>
             <div className="space-y-2 font-poppins text-gray-300">
-              <p>123 Culinary Avenue</p>
-              <p>New York, NY 10001</p>
-              <p>+1 (555) 123-CHEF</p>
-              <p>reservations@lumiere.com</p>
+              <p>8233 Fenton St</p>
+              <p>Silver Spring, MD 20910</p>
+              <p>+1 240-660-1337</p>
+              <p>reservations@effio.com</p>
             </div>
           </div>
         </div>
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center">
           <p className="text-gray-400 font-poppins">
-            © 2024 Lumière. All rights reserved. | Privacy Policy | Terms of Service
+            © 2024 Effio. All rights reserved. | Privacy Policy | Terms of Service
           </p>
         </div>
       </div>

@@ -10,7 +10,7 @@ export default function About() {
   const galleryRef = useFadeIn();
 
   useEffect(() => {
-    document.title = "Lumière - Our Story | About Us";
+    document.title = "Effoi - Our Story | About Us";
   }, []);
 
   const timelineEvents = [

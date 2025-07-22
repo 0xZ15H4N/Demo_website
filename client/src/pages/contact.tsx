@@ -24,7 +24,7 @@ export default function Contact() {
   const infoRef = useFadeIn();
 
   useEffect(() => {
-    document.title = "Lumière - Contact Us | Reservations";
+    document.title = "Effoi - Contact Us | Reservations";
   }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -87,10 +87,13 @@ export default function Contact() {
   ];
 
   const hours = [
-    { days: "Monday - Tuesday", time: "Closed" },
-    { days: "Wednesday - Thursday", time: "5:30 PM - 10:00 PM" },
-    { days: "Friday - Saturday", time: "5:30 PM - 11:00 PM" },
-    { days: "Sunday", time: "5:30 PM - 9:30 PM" }
+    { days: "Monday", time: "10 AM - 2 AM" },
+    { days: "Tuesday", time: "10 AM - 2 AM" },
+    { days: "Wednesday", time: "10 AM - 2 AM" },
+    { days: "Thursday", time: "10 AM - 2 AM" },
+    { days: "Friday", time: "10 AM - 3 AM" },
+    { days: "Saturday", time: "10 AM - 3 AM" },
+    { days: "Sunday", time: "10 AM - 2 AM" }
   ];
 
   return (
@@ -249,7 +252,7 @@ export default function Contact() {
                   <MapPin className="w-5 h-5 text-burgundy-500 mt-1" />
                   <div>
                     <p className="font-montserrat font-medium text-charcoal">Address</p>
-                    <p className="text-gray-600 font-poppins">123 Culinary Avenue<br />Downtown District<br />New York, NY 10001</p>
+                    <p className="text-gray-600 font-poppins">8233 Fenton St<br />Silver Spring, MD 20910<br />United States</p>
                   </div>
                 </div>
                 
@@ -257,7 +260,7 @@ export default function Contact() {
                   <Phone className="w-5 h-5 text-burgundy-500 mt-1" />
                   <div>
                     <p className="font-montserrat font-medium text-charcoal">Phone</p>
-                    <p className="text-gray-600 font-poppins">+1 (555) 123-CHEF</p>
+                    <p className="text-gray-600 font-poppins">+1 240-660-1337</p>
                   </div>
                 </div>
                 
@@ -265,8 +268,27 @@ export default function Contact() {
                   <Mail className="w-5 h-5 text-burgundy-500 mt-1" />
                   <div>
                     <p className="font-montserrat font-medium text-charcoal">Email</p>
-                    <p className="text-gray-600 font-poppins">reservations@lumiere.com</p>
+                     <p className="text-gray-600 font-poppins">reservations@effoi.com</p>
                   </div>
+                </div>
+              </div>
+            </div>
+
+             {/* Service Options Section */}
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-playfair font-bold text-charcoal mb-6">Service Options</h3>
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <span className="w-2 h-2 bg-burgundy-500 rounded-full"></span>
+                  <span className="text-gray-600 font-poppins">Outdoor seating</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <span className="w-2 h-2 bg-burgundy-500 rounded-full"></span>
+                  <span className="text-gray-600 font-poppins">Vegan options</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <span className="w-2 h-2 bg-burgundy-500 rounded-full"></span>
+                  <span className="text-gray-600 font-poppins">Kids' menu</span>
                 </div>
               </div>
             </div>

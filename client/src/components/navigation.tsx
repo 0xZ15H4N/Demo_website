@@ -37,7 +37,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/">
               <h1 className="text-5xl font-great-vibes font-bold text-black cursor-pointer hover:text-burgundy-500 transition-colors">
-                Lumière
+                Effio
               </h1>
             </Link>
           </div>
