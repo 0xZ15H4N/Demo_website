@@ -7,6 +7,7 @@ export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const isHomePage = location === '/';
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -29,14 +30,20 @@ export default function Navigation() {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-ivory shadow-lg' : 'bg-ivory/95 backdrop-blur-md shadow-lg'
+      isHomePage 
+        ? (isScrolled ? 'bg-ivory shadow-lg' : 'bg-transparent')
+        : 'bg-ivory shadow-lg'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/">
-              <h1 className="text-5xl font-great-vibes font-bold text-black cursor-pointer hover:text-burgundy-500 transition-colors">
+             <h1 className={`text-3xl font-great-vibes font-bold cursor-pointer transition-colors duration-300 ${
+                isHomePage 
+                  ? (isScrolled ? 'text-charcoal hover:text-burgundy-500' : 'text-white hover:text-gray-200')
+                  : 'text-charcoal hover:text-burgundy-500'
+              }`}>
                 Effio
               </h1>
             </Link>
@@ -48,10 +55,12 @@ export default function Navigation() {
               <Link
                 key={item.path}
                 href={item.path}
-                className={`font-montserrat font-bold transition-colors ${
+                className={`font-montserrat font-medium transition-colors duration-300 ${
                   location === item.path
                     ? 'text-blue-500'
-                    : 'text-black hover:text-blue-500'
+                    : isHomePage && !isScrolled
+                    ? 'text-white hover:text-blue-300'
+                    : 'text-charcoal hover:text-blue-500'
                 }`}
               >
                 {item.label}
