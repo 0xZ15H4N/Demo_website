@@ -36,7 +36,7 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/">
-              <h1 className="text-3xl font-great-vibes text-burgundy-500 cursor-pointer hover:text-burgundy-600 transition-colors">
+              <h1 className="text-5xl font-great-vibes font-bold text-black cursor-pointer hover:text-burgundy-500 transition-colors">
                 Lumière
               </h1>
             </Link>
@@ -48,10 +48,10 @@ export default function Navigation() {
               <Link
                 key={item.path}
                 href={item.path}
-                className={`font-montserrat font-medium transition-colors ${
+                className={`font-montserrat font-bold transition-colors ${
                   location === item.path
                     ? 'text-blue-500'
-                    : 'text-charcoal hover:text-blue-500'
+                    : 'text-black hover:text-blue-500'
                 }`}
               >
                 {item.label}
