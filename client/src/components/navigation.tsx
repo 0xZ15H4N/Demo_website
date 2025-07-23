@@ -29,23 +29,44 @@ export default function Navigation() {
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isHomePage 
-        ? (isScrolled ? 'bg-ivory shadow-lg' : 'bg-transparent')
-        : 'bg-ivory shadow-lg'
-    }`}>
+    <nav
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        isHomePage
+          ? isScrolled
+            ? "bg-ivory shadow-lg"
+            : "bg-transparent"
+          : "bg-ivory shadow-lg"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24 pt-2">
           {/* Logo */}
-          <div className="flex items-center">
+         <div className="flex items-center">
             <Link href="/">
-             <h1 className={`text-5xl font-great-vibes font-bold cursor-pointer transition-colors duration-300 ${
-                isHomePage 
-                  ? (isScrolled ? 'text-charcoal hover:text-burgundy-500' : 'text-white hover:text-gray-200')
-                  : 'text-charcoal hover:text-burgundy-500'
-              }`}>
-                Effio
-              </h1>
+              <div className="cursor-pointer">
+                 <h1
+                  className={`text-5xl font-great-vibes font-bold transition-colors duration-300 ${
+                    isHomePage
+                      ? isScrolled
+                        ? "text-charcoal hover:text-burgundy-500"
+                        : "text-white hover:text-gray-200"
+                      : "text-charcoal hover:text-burgundy-500"
+                  }`}
+                >
+                  Effoi
+                </h1>
+                <p
+                  className={`text-sm font-montserrat mt-1 transition-colors duration-300 ${
+                    isHomePage
+                      ? isScrolled
+                        ? "text-gray-600"
+                        : "text-gray-300"
+                      : "text-gray-600"
+                  }`}
+                >
+                  Ethiopian cuisine
+                </p>
+              </div>
             </Link>
           </div>
           

@@ -5,6 +5,18 @@ export default {
   content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+        fontFamily: {
+        'playfair': ['Playfair Display', 'serif'],
+        'poppins': ['Poppins', 'sans-serif'],
+        'great-vibes': ['Great Vibes', 'cursive'],
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'lora': ['Lora', 'serif'],
+        'merriweather': ['Merriweather', 'serif'],
+        'raleway': ['Raleway', 'sans-serif'],
+        'josefin': ['Josefin Sans', 'sans-serif'],
+        'quicksand': ['Quicksand', 'sans-serif'],
+      },
+   
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
